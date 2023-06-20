@@ -1,0 +1,13 @@
+import pandas as pd
+s1=pd.Series([2,3,4])
+s2=pd.Series([2,2,2])
+print(s1.mod(s2))
+print(s1%s2)
+print(s1+s2)
+print(s2-s1)
+print(s1.subtract(s2))
+print(s1<s2)
+print(s1.gt(s2))
+print(s1.pow(s2))
+print(s1**(s2))
+print(s2.pow(s1))

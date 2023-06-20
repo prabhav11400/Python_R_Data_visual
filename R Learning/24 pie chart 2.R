@@ -1,0 +1,46 @@
+#(1)
+x<- c(12,35,56,75)
+labels<- c("INDIA","UK","JAPAN","USA")
+pie(x)
+
+#(2)
+x<- c(12,35,56,75)
+labels<- c("INDIA","UK","JAPAN","USA")
+pie(x,labels)
+
+#(3)
+x<- c(12,35,56,75)
+labels<- c("INDIA","UK","JAPAN","USA")
+colors=c("blue","green","red","orange")
+pie(x,labels,main="Country Pie Chart",col=colors)
+
+#(4)
+x<- c(12,35,56,75)
+labels<- c("INDIA","UK","JAPAN","USA")
+pie(x,labels,main="Country Pie Chart",col=rainbow(length(x)))
+
+#(5)
+x<- c(12,35,56,75)
+labels<- c("INDIA","UK","JAPAN","USA")
+colors=c("blue","green","red","orange")
+pie(x,labels,main="Country Pie Chart",col=colors, clockwise=TRUE)
+
+#(6)
+x<- c(12,35,56,75)
+labels<- c("PAKISTAN","SRILANKA","USA","INDIA")
+colors=c("blue","green","yellow","red")
+pie(x,labels,main="COUNTRY PIE CHART",col=colors,clockwise=TRUE)
+legend("topright",c("PAKISTAN","SRILANKA","USA","INDIA"),cex=0.8,fill=colors)
+
+#3d pie chart
+install.packages("plotrix")
+library(plotrix)
+x2<- c(20,65,15,50,45)
+label2<- c("USA","INDIA","CHINA","UK","UAE")
+pie3D(x2,labels=label2,explode=0.2,main="country pie chart")
+
+x1<- c(20,65,15,50,45)
+label1<- c("USA","INDIA","CHINA","UK","UAE")
+pie_percent<- round(100*x1/sum(x1))
+pie3D(x1,labels =pie_percent,main="Country  PIe chart",col=rainbow(length(x1)))
+legend("topright",label1,cex=0.9,fill=rainbow(length(x)))

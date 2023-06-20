@@ -1,0 +1,21 @@
+import numpy as np
+a=np.array([10,20,30,40,50,60])
+print(a)
+b=np.shape(a)
+print(b)
+b1=np.reshape(a,(3,2))
+print(b1)
+b2=np.reshape(a,(2,3))
+print(b2)
+# b3=np.reshape(2,4)
+# print(b3)
+a1=np.array([1,2,3,4,5,6,7,8])
+a2=np.reshape(a1,(2,2,2))
+print(a2)
+
+c=np.array([[10,20,30],[40,50,60]])
+d=np.shape(c)
+print(d)
+
+d2=np.reshape(a,(3,2))
+print(d2)

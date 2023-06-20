@@ -1,0 +1,2 @@
+A donkey is an animal.
+##### has four legs. ##### is a vegetarian animal.

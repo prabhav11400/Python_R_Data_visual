@@ -1,0 +1,7 @@
+name1<- readline(prompt="Enter your name")
+name2<- readline()
+print(paste("Hello my name is", name1,name2))
+print(paste("Hello my name is", name1,name2,"bye bye",sep="_"))
+print(paste("Hello my name is", name1,name2,"bye bye", sep="-"))
+print(paste("Hello my name is", name1,name2,"bye bye", sep=""))
+print(paste0("aman","is","a","good boy"))
